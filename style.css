@@ -46,8 +46,14 @@ h1 {
 }
 
 #card-image {
-    max-width: 95%;
-    max-height: 80%;
+    /* Sets the fixed maximum size */
+    max-width: 600px;
+    max-height: 600px;
+    
+    /* Ensures the image scales down on smaller screens */
+    width: 100%; 
+    
+    /* These are your existing styles */
     object-fit: contain;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
